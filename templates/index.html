@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao Compartilhamento de Atividades</title>
+    <!-- Referência ao CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Compartilhamento de Atividades!</h1>
+    </header>
+    <p>Escolha uma das opções abaixo:</p>
+    <ul>
+        <li><a class="btn-link" href="{{ url_for('sobre') }}">Sobre o Projeto</a></li>
+        <li><a class="btn-link" href="{{ url_for('calendario') }}">Calendário da Semana</a></li>
+        <li><a class="btn-link" href="{{ url_for('planejamento') }}">Planejamento Mensal</a></li>
+
+    </ul>
+</body>
+</html>

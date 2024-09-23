@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário da Semana</title>
+    <!-- Referência ao CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Calendário da Semana</h1>
+    </header>
+    <table class="calendario">
+        <tr>
+            <th>Dia</th>
+            <th>Atividade</th>
+        </tr>
+        <tr>
+            <td>Segunda</td>
+            <td>Exercício de Matemática</td>
+        </tr>
+        <tr>
+            <td>Terça</td>
+            <td>Leitura de Texto</td>
+        </tr>
+        <tr>
+            <td>Quarta</td>
+            <td>Jogo Educacional</td>
+        </tr>
+        <tr>
+            <td>Quinta</td>
+            <td>Atividade de Ciências</td>
+        </tr>
+        <tr>
+            <td>Sexta</td>
+            <td>Revisão de História</td>
+        </tr>
+    </table>
+    <br>
+    <a class="btn-voltar" href="{{ url_for('index') }}">Voltar para a página inicial</a>
+</body>
+</html>

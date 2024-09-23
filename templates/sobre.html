@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Projeto</title>
+    <!-- Referência ao CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Sobre o Projeto</h1>
+    </header>
+    <p>Projeto executado por Igor José da Cunha Pedrozo. Consiste em uma atividade de extensão da faculdade Estácio. Esse projeto foi executado em conjunto com a pedagoga Any Caroline Fernandes Guimarães.</p>
+    <p>Esse projeto é uma aplicação simples desenvolvida com Flask, destinada a pedagogos. A ideia é compartilhar informações e atividades, facilitando a comunicação e a troca de recursos entre educadores.</p>
+    
+    <h2>Características do Projeto</h2>
+    <ul>
+        <li>Uma página inicial de apresentações e com links para outras seções.</li>
+        <li>Uma página que explica o objetivo do projeto.</li>
+        <li>Uma página para um calendário informando as atividades da semana.</li>
+    </ul>
+
+    <a class="btn-voltar" href="{{ url_for('index') }}">Voltar para a página inicial</a>
+</body>
+</html>
